@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de Logos - Encuentro TIC Senior</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f3f3f3;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    #visor {
+      max-width: 90%;
+      max-height: 80vh;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #visor img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 80vh;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      background: #fff;
+    }
+
+    .controles {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .boton {
+      font-size: 2rem;
+      background: #ffffff;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .boton:hover {
+      background: #e8e8e8;
+    }
+
+    #contador {
+      font-size: 1.5rem;
+      font-weight: bold;
+      min-width: 60px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="visor">
+    <img id="imagen" src="../img/logo1.png" alt="Logo 1">
+  </div>
+
+  <div class="controles">
+    <div class="boton" onclick="anterior()">&#8592;</div>
+    <div id="contador">1 / 10</div>
+    <div class="boton" onclick="siguiente()">&#8594;</div>
+  </div>
+
+  <script>
+    const imagenes = [
+      "../img/logo1.png",
+      "../img/logo2.png",
+      "../img/logo3.png",
+      "../img/logo4.png",
+      "../img/logo5.png",
+      "../img/logo6.png",
+      "../img/logo7.png",
+      "../img/logo8.png",
+      "../img/logo9.png",
+      "../img/logo10.png"
+    ];
+
+    let indice = 0;
+    const imagen = document.getElementById("imagen");
+    const contador = document.getElementById("contador");
+
+    function mostrarImagen() {
+      imagen.src = imagenes[indice];
+      imagen.alt = "Logo " + (indice + 1);
+      contador.textContent = (indice + 1) + " / " + imagenes.length;
+    }
+
+    function siguiente() {
+      indice = (indice + 1) % imagenes.length;
+      mostrarImagen();
+    }
+
+    function anterior() {
+      indice = (indice - 1 + imagenes.length) % imagenes.length;
+      mostrarImagen();
+    }
+  </script>
+
+</body>
+</html>
