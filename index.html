@@ -6,17 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="index_files/styles.css">
+    <style>
+        /* Ajuste de margen para separar el botón de la descripción */
+        .cta {
+            margin-top: 20px; /* separa el botón del texto superior */
+            text-align: center;
+        }
+        .footer-cta {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <!-- Cabecera con logo -->
+        <!-- Cabecera -->
         <header class="header">
             <img src="index_files/logo_evento_tic_naif.png" alt="Logo Encuentro TIC Senior" class="logo">
             <h1 class="main-title">Encuentro TIC Senior La Rioja</h1>
-            <p class="subtitle">Primer Evento Anual - 24 de octubre de 2025</p>
+            <p class="subtitle">Primer Evento Anual · 24 de octubre de 2025</p>
             <p class="description">
-                Un espacio de reencuentro, camaradería y enriquecimiento mutuo entre jubilados y prejubilados del sector TIC de La Rioja y regiones colindantes.
+                Espacio de reencuentro, camaradería y aprendizaje entre jubilados y prejubilados del sector TIC de La Rioja y provincias vecinas.
             </p>
+            <div class="cta">
+                <a href="#" class="btn btn-primary" id="btn-preinscripcion" aria-label="Abrir formulario externo de preinscripción">Preinscripción</a>
+            </div>
         </header>
 
         <!-- Detalles del evento -->
@@ -24,111 +50,61 @@
             <h2>Detalles del evento</h2>
             <div class="details-grid">
                 <div class="detail-item"><strong>Fecha:</strong> 24 de octubre de 2025</div>
-                <div class="detail-item"><strong>Hora:</strong> 18:00 - 20:00 horas (aproximadamente)</div>
+                <div class="detail-item"><strong>Hora prevista:</strong> tarde</div>
                 <div class="detail-item"><strong>Ubicación:</strong> Espacio "La Plaza", Circular Universe, Logroño</div>
-                <div class="detail-item"><strong>Dirigido a:</strong> Jubilados y prejubilados del sector TIC de La Rioja y regiones colindantes.</div>
+                <div class="detail-item"><strong>Dirigido a:</strong> jubilados y prejubilados del sector TIC de La Rioja y regiones colindantes</div>
             </div>
         </section>
 
-        <!-- Programa del evento -->
+        <!-- Programa (sin minutaje) -->
         <section class="program">
             <h2>Programa del evento</h2>
-            <div class="program-timeline">
-                <div class="timeline-item">
-                    <div class="time">18:00 - 18:15</div>
-                    <div class="activity">
-                        <h3>Bienvenida y registro</h3>
-                        <p>Recepción de participantes, entrega de material informativo y networking inicial.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="time">18:15 - 18:30</div>
-                    <div class="activity">
-                        <h3>Presentación del evento</h3>
-                        <p>Bienvenida oficial, objetivos y visión del encuentro, presentación de participantes.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="time">18:30 - 19:15</div>
-                    <div class="activity">
-                        <h3>Charlas y experiencias</h3>
-                        <p>Charlas breves de participantes, intercambio de experiencias profesionales y mesa redonda sobre el sector TIC.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="time">19:15 - 19:30</div>
-                    <div class="activity">
-                        <h3>Planificación futura</h3>
-                        <p>Propuestas para próximos encuentros, creación de red de contactos e iniciativas colaborativas.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="time">19:30 - 20:00</div>
-                    <div class="activity">
-                        <h3>Lunch y networking</h3>
-                        <p>Degustación de productos locales, networking informal e intercambio de contactos.</p>
-                    </div>
-                </div>
-            </div>
+
+            <article class="program-item">
+                <h3>Bienvenida</h3>
+                <p>Momento inicial para dar la acogida a los participantes, presentar los objetivos del encuentro y marcar el tono de camaradería que caracterizará toda la jornada.</p>
+            </article>
+
+            <article class="program-item">
+                <h3>Mesa redonda 1: Del código a la calma</h3>
+                <p>Espacio dedicado a reflexionar sobre cómo afrontar la transición a la jubilación, compartiendo experiencias personales y vías de reinvención tras una vida profesional en el sector TIC.</p>
+            </article>
+
+            <article class="program-item">
+                <h3>Mesa redonda 2: Curiosidad sin fecha de caducidad</h3>
+                <p>Conversación centrada en el valor del aprendizaje continuo en la madurez, con testimonios que muestran cómo seguir explorando, formándose y manteniendo viva la inquietud tecnológica.</p>
+            </article>
+
+            <article class="program-item">
+                <h3>Pausa café &amp; networking</h3>
+                <p>Descanso diseñado para favorecer el diálogo informal, propiciar reencuentros y abrir la puerta a nuevas conexiones entre los asistentes.</p>
+            </article>
+
+            <article class="program-item">
+                <h3>Mesa redonda 3: Humor TIC</h3>
+                <p>Encuentro distendido donde se comparten anécdotas y vivencias del mundo de la informática, con un enfoque cercano y humorístico que refleja una historia profesional común.</p>
+            </article>
+
+            <article class="program-item">
+                <h3>Espacio libre de experiencias</h3>
+                <p>Turno abierto en el que cualquier participante puede tomar la palabra y aportar recuerdos, iniciativas o reflexiones personales, fomentando la participación colectiva.</p>
+            </article>
+
+            <article class="program-item">
+                <h3>Clausura oficial</h3>
+                <p>Cierre formal del encuentro con un repaso de los momentos destacados, agradecimientos y una mirada puesta en próximas ediciones de la iniciativa.</p>
+            </article>
+
+            <article class="program-item">
+                <h3>Networking con lunch</h3>
+                <p>Colofón final en un ambiente relajado, con picoteo y bebidas, que facilita la conversación cercana y prolonga el espíritu de reencuentro.</p>
+            </article>
         </section>
 
-        <!-- Formulario de inscripción -->
-        <section class="registration">
-            <h2>Inscripción al evento</h2>
-            <form id="registrationForm" class="form">
-                <div class="form-group">
-                    <label for="nombre">Nombre *</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="apellidos">Apellidos *</label>
-                    <input type="text" id="apellidos" name="apellidos" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono">
-                </div>
-                <div class="form-group">
-                    <label for="empresa">Empresa</label>
-                    <input type="text" id="empresa" name="empresa">
-                </div>
-                <div class="form-group">
-                    <label for="cargo">Cargo</label>
-                    <input type="text" id="cargo" name="cargo">
-                </div>
-                <div class="form-group">
-                    <label for="comentarios">Comentarios</label>
-                    <textarea id="comentarios" name="comentarios" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Inscribirse al evento</button>
-            </form>
-            <div id="registrationMessage" class="message"></div>
-        </section>
-
-        <!-- Invitaciones -->
-        <section class="invitations">
-            <h2>Invitar a un compañero</h2>
-            <form id="invitationForm" class="form">
-                <div class="form-group">
-                    <label for="inviteEmail">Email del compañero *</label>
-                    <input type="email" id="inviteEmail" name="inviteEmail" required>
-                </div>
-                <div class="form-group">
-                    <label for="inviteName">Nombre del compañero</label>
-                    <input type="text" id="inviteName" name="inviteName">
-                </div>
-                <div class="form-group">
-                    <label for="inviteMessage">Mensaje personal (opcional)</label>
-                    <textarea id="inviteMessage" name="inviteMessage" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar invitación</button>
-            </form>
-            <div id="invitationMessage" class="message"></div>
-        </section>
+        <!-- Botón repetido al pie -->
+        <div class="footer-cta">
+            <a href="#" class="btn btn-primary" aria-label="Abrir formulario externo de preinscripción">Preinscripción</a>
+        </div>
     </div>
 
     <script src="index_files/script.js"></script>
