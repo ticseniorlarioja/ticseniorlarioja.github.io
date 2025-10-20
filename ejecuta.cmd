@@ -1,1 +1,0 @@
-c:\python312\python.exe c:\Git\python\videofondonegro\videofondonegro.py
