@@ -37,8 +37,22 @@
             margin: 0 auto;
         }
         .previous-editions {
-            text-align: center;
-            margin: 25px 0 40px 0;
+            max-width: 850px;
+            margin: 25px auto 40px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .previous-editions .btn-primary {
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 0.72rem;
+        }
+        .youtube-img {
+            height: 55px;
+            width: auto;
+            border-radius: 8px;
+            display: block;
         }
     </style>
 </head>
@@ -49,6 +63,9 @@
         </div>
 
         <div class="previous-editions">
+            <a href="https://www.youtube.com/@ticseniorlarioja" target="_blank">
+                <img src="index_files/youtube.jpg" alt="Canal TIC Senior La Rioja" class="youtube-img">
+            </a>
             <a href="2025.html" class="btn btn-primary">Ediciones anteriores del evento</a>
         </div>
     </div>
