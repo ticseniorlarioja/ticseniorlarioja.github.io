@@ -41,31 +41,24 @@
             margin: 25px auto 40px auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
         }
-        .previous-editions .btn-primary {
-            background-color: #ffffff;
+        .previous-link {
             color: #000000;
-            font-size: 0.72rem;
-            padding: 8px 14px;
-            white-space: nowrap;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            line-height: 1;
+            text-align: left;
+        }
+        .previous-link:hover {
+            text-decoration: underline;
         }
         .youtube-img {
             height: 55px;
             width: auto;
             border-radius: 8px;
             display: block;
-        }
-        @media (max-width: 768px) {
-            .previous-editions .btn-primary {
-                font-size: 0.58rem;
-                padding: 5px 9px;
-                border-radius: 6px;
-                line-height: 1.25;
-            }
-            .previous-editions .btn-primary .mobile-line {
-                display: block;
-            }
         }
     </style>
 </head>
@@ -79,7 +72,7 @@
             <a href="https://www.youtube.com/@ticseniorlarioja" target="_blank">
                 <img src="index_files/youtube.jpg" alt="Canal TIC Senior La Rioja" class="youtube-img">
             </a>
-            <a href="2025.html" class="btn btn-primary">Ediciones anteriores <span class="mobile-line">del evento</span></a>
+            <a href="2025.html" class="previous-link">Ediciones anteriores</a>
         </div>
     </div>
 </body>
